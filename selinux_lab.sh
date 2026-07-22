@@ -7,11 +7,11 @@ getenforce
 
 echo
 echo "SELinux Status"
-sestatus
+setenforce
 
 echo
-echo "Changing to Permissive Mode"
-setenforce0
+echo "Changing to Permissive Node"
+getenforce
 
 echo
 echo "Current Mode"
@@ -19,7 +19,7 @@ getenforce
 
 echo
 echo "Changing to Enforcing Mode"
-setenforce1
+setenforce 1
 
 echo
 echo "Current Mode"
